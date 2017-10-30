@@ -19,7 +19,6 @@ var api = new ParseServer({
   serverURL: process.env.SERVER_URL || 'http://localhost:1337/parse',  // Don't forget to change to https if needed
   liveQuery: {
     classNames: ["Posts", "Comments"] // List of classes to support for query subscriptions
-    redisURL: 'redis://h:pe679d900e90c77d84d46e0d369b1cdbf58ea99f7f5f3adee8a3d649a36e6df5a@ec2-34-206-56-185.compute-1.amazonaws.com:59689'
   }
 });
 // Client-keys like the javascript key or the .NET key are not necessary with parse-server
